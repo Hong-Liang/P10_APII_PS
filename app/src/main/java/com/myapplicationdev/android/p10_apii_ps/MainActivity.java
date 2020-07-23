@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.random:
                 Random rnd = new Random();
-                vPager.setCurrentItem(rnd.nextInt(vPager.getChildCount()));
+                vPager.setCurrentItem(rnd.nextInt(vPager.getChildCount() + 1));
                 return true;
         }
         return super.onOptionsItemSelected(item);
